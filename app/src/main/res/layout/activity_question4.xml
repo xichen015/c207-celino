@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAFBFA"
+    tools:context=".question4">
+
+    <TextView
+        android:id="@+id/q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginBottom="30dp"
+        android:text="Question #4"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Exact date IOS was released?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/answerG4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q4" />
+
+    <RadioGroup
+        android:id="@+id/answerG4"
+        android:layout_width="181dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/a13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="09 23 2008" />
+
+        <RadioButton
+            android:id="@+id/a14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08 24 2002" />
+
+        <RadioButton
+            android:id="@+id/a15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="09 27 2007" />
+
+        <RadioButton
+            android:id="@+id/a16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="07 23 2007" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:backgroundTint="#009688"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerG4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
